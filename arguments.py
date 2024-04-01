@@ -135,7 +135,7 @@ class TrainingArguments(transformers.TrainingArguments):
         metadata={"help": "If True, use gradient checkpointing to save memory at the expense of slower backward pass."},
     )
     load_best_model_at_end: Optional[bool] = field(default=True)
-    save_total_limit: Optional[int] = field(default=10)
+    save_total_limit: Optional[int] = field(default=3)
     logging_steps: float = field(default=2)
     report_to: Optional[List[str]] = field(default="none")
     metrics: str = field(
